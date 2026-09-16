@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<div class="app">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <div class="brand">
+        <span class="brand-icon">⌬</span>
+        <span>CYBER<span class="accent">THREAT</span></span>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="nav-menu" id="navMenu">
+        <button class="nav-btn active" data-page="home">Home</button>
+        <button class="nav-btn" data-page="threats">Cyber Threat</button>
+        <button class="nav-btn" data-page="trends">Tren Serangan</button>
+        <button class="nav-btn" data-page="cases">Kasus & APT</button>
+        <button class="nav-btn" data-page="defense">Dampak & Pertahanan</button>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ================= HOME ================= -->
+  <main>
+
+    <section class="page active" id="home">
+
+      <div class="hero">
+        <div class="hero-grid">
+
+          <div class="hero-text">
+            <div class="eyebrow">
+              <span class="pulse"></span>
+              CYBERSECURITY AWARENESS
+            </div>
+
+            <h1>
+              Kenali Ancaman.<br>
+              <span>Lindungi Dunia Digital.</span>
+            </h1>
+
+            <p>
+              Website edukasi yang membahas berbagai ancaman siber,
+              tren serangan, kasus terkenal, Advanced Persistent Threat,
+              dampak serangan, dan cara membangun pertahanan digital.
+            </p>
+
+            <div class="hero-buttons">
+              <button class="btn primary" data-go="threats">
+                Jelajahi Ancaman →
+              </button>
+
+              <button class="btn secondary" data-go="defense">
+                Cara Melindungi Diri
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="terminal">
+
+              <div class="terminal-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <b>security_monitor.exe</b>
+              </div>
+
+              <div class="terminal-body">
+                <p><span class="green">root@cyber</span>:~$ scan --network</p>
+                <p>Scanning digital environment...</p>
+                <p class="yellow">[!] Suspicious activity detected</p>
+                <p class="red">[!] Threat level: HIGH</p>
+                <p class="green">[✓] Security protocol active</p>
+                <p><span class="green">root@cyber</span>:~$ _</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- QUICK INFO -->
+      <div class="container">
+
+        <div class="section-heading">
+          <span>01 / INTRODUCTION</span>
+          <h2>Mengenal Cyber Threat</h2>
+          <p>
+            Cyber threat adalah ancaman yang dapat mengganggu
+            kerahasiaan, integritas, maupun ketersediaan sistem dan data.
+          </p>
+        </div>
+
+        <div class="info-grid">
+
+          <article class="info-card">
+            <div class="card-icon">⚠</div>
+            <h3>Ancaman Beragam</h3>
+            <p>
+              Mulai dari phishing, malware, ransomware, DDoS,
+              pencurian kredensial hingga eksploitasi kerentanan.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">◉</div>
+            <h3>Target Semakin Luas</h3>
+            <p>
+              Individu, perusahaan, institusi pendidikan,
+              layanan publik, hingga infrastruktur penting dapat menjadi target.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">⌁</div>
+            <h3>Serangan Terus Berkembang</h3>
+            <p>
+              Penyerang menggabungkan teknik lama dengan otomatisasi,
+              layanan pihak ketiga, dan teknologi AI.
+            </p>
+          </article>
+
+        </div>
+
+
+        <!-- GROUP -->
+        <div class="group-section">
+
+          <div class="section-heading">
+            <span>TEAM PROJECT</span>
+            <h2>Anggota Kelompok</h2>
+          </div>
+
+          <div class="members">
+
+            <div class="member">
+              <span>01</span>
+              <strong>Muhammad Ilham</strong>
+            </div>
+
+            <div class="member">
+              <span>02</span>
+              <strong>M. Yudistira Raka</strong>
+            </div>
+
+            <div class="member">
+              <span>03</span>
+              <strong>M. Rohmansyah</strong>
+            </div>
+
+            <div class="member">
+              <span>04</span>
+              <strong>M. Nabil</strong>
+            </div>
+
+            <div class="member">
+              <span>05</span>
+              <strong>M. Nizar</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= THREATS ================= -->
+    <section class="page" id="threats">
+
+      <div class="page-header">
+        <div>
+          <span>02 / CYBER THREATS</span>
+          <h1>Jenis Ancaman Siber</h1>
+          <p>
+            Kenali teknik yang sering digunakan untuk menyerang
+            sistem, jaringan, perangkat, maupun manusia.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="search-box">
+          <span>⌕</span>
+          <input
+            type="text"
+            id="threatSearch"
+            placeholder="Cari ancaman... contoh: phishing, ransomware"
+          >
+        </div>
+
+        <div class="threat-grid" id="threatGrid">
+
+          <article class="threat-card" data-name="phishing">
+            <div class="threat-number">01</div>
+            <div class="threat-icon">🎣</div>
+            <h3>Phishing</h3>
+            <p>
+              Teknik manipulasi yang mencoba membuat korban
+              menyerahkan informasi atau melakukan tindakan tertentu.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Phishing dapat menggunakan email, pesan, website palsu,
+                SMS, maupun metode komunikasi lainnya. Tujuannya sering
+                berkaitan dengan pencurian kredensial, data, atau akses.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="ransomware">
+            <div class="threat-number">02</div>
+            <div class="threat-icon">🔒</div>
+            <h3>Ransomware</h3>
+            <p>
+              Malware yang dapat mengganggu akses terhadap data
+              atau sistem dan kemudian digunakan untuk pemerasan.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Ransomware menjadi salah satu ancaman dengan dampak besar
+                karena dapat mengganggu operasi organisasi dan menyebabkan
+                kehilangan akses terhadap data.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="ddos">
+            <div class="threat-number">03</div>
+            <div class="threat-icon">🌐</div>
+            <h3>DDoS</h3>
+            <p>
+              Serangan yang membanjiri layanan dengan trafik atau permintaan
+              sehingga ketersediaan layanan dapat terganggu.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                ENISA mencatat DDoS sebagai jenis insiden paling dominan
+                dalam Threat Landscape 2025, yaitu sekitar 76,7% dari
+                insiden yang dianalisis.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="malware">
+            <div class="threat-number">04</div>
+            <div class="threat-icon">☣</div>
+            <h3>Malware</h3>
+            <p>
+              Perangkat lunak berbahaya yang dirancang untuk melakukan
+              aktivitas yang tidak diinginkan pada sistem.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Malware mencakup berbagai kategori seperti trojan,
+                spyware, ransomware, worm, dan jenis perangkat lunak
+                berbahaya lainnya.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="credential theft pencurian kredensial">
+            <div class="threat-number">05</div>
+            <div class="threat-icon">🔑</div>
+            <h3>Credential Theft</h3>
+            <p>
+              Upaya mendapatkan username, password, token,
+              atau informasi autentikasi lainnya.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Kredensial yang dicuri dapat digunakan untuk memperoleh
+                akses tidak sah ke akun atau sistem lain.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="vulnerability exploitation eksploitasi kerentanan">
+            <div class="threat-number">06</div>
+            <div class="threat-icon">🧩</div>
+            <h3>Vulnerability Exploitation</h3>
+            <p>
+              Memanfaatkan kelemahan software, konfigurasi,
+              atau sistem untuk mendapatkan akses atau melakukan tindakan tertentu.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Verizon DBIR 2026 mencatat eksploitasi kerentanan
+                sebagai titik masuk pada 31% breach yang dianalisis.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="supply chain supply-chain attack">
+            <div class="threat-number">07</div>
+            <div class="threat-icon">⛓</div>
+            <h3>Supply Chain Attack</h3>
+            <p>
+              Serangan yang memanfaatkan hubungan ketergantungan
+              antara organisasi dengan vendor atau pihak ketiga.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Ketergantungan terhadap software, vendor, dan layanan
+                eksternal dapat memperluas permukaan serangan.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="apt advanced persistent threat">
+            <div class="threat-number">08</div>
+            <div class="threat-icon">👁</div>
+            <h3>APT</h3>
+            <p>
+              Advanced Persistent Threat merupakan aktivitas ancaman
+              yang dapat berlangsung dalam jangka panjang dan terarah.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                APT biasanya dikaitkan dengan operasi yang terencana,
+                memiliki target tertentu, dan berusaha mempertahankan
+                akses selama mungkin.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="social engineering rekayasa sosial">
+            <div class="threat-number">09</div>
+            <div class="threat-icon">🧠</div>
+            <h3>Social Engineering</h3>
+            <p>
+              Memanfaatkan manipulasi psikologis agar seseorang
+              melakukan tindakan yang menguntungkan penyerang.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Bentuknya dapat berupa pretexting, phishing,
+                penipuan melalui pesan, maupun komunikasi suara.
+              </p>
+            </div>
+          </article>
+
+
+          <article class="threat-card" data-name="ai attack artificial intelligence">
+            <div class="threat-number">10</div>
+            <div class="threat-icon">🤖</div>
+            <h3>AI-Assisted Attack</h3>
+            <p>
+              Penggunaan AI oleh threat actor untuk membantu
+              berbagai tahapan aktivitas serangan.
+            </p>
+            <button class="read-btn">Pelajari →</button>
+
+            <div class="more-content">
+              <p>
+                Verizon DBIR 2026 menemukan bahwa threat actor
+                menggunakan bantuan GenAI pada berbagai tahap serangan.
+                Dalam kasus median, bantuan AI digunakan pada sekitar
+                15 teknik berbeda.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="no-result" id="noResult">
+          Tidak ada ancaman yang ditemukan.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= TRENDS ================= -->
+    <section class="page" id="trends">
+
+      <div class="page-header">
+        <span>03 / THREAT LANDSCAPE</span>
+        <h1>Tren Serangan Siber</h1>
+        <p>
+          Statistik berikut menggunakan data dari laporan resmi
+          ENISA dan Verizon.
+        </p>
+      </div>
+
+      <div class="container">
+
+        <div class="verified-banner">
+          <span>✓</span>
+          <div>
+            <strong>Data Terverifikasi</strong>
+            <p>
+              Statistik diperbarui berdasarkan ENISA Threat Landscape 2025
+              serta Verizon DBIR 2025 dan 2026.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="stats-grid">
+
+          <div class="stat-card">
+            <span class="stat-source">ENISA 2025</span>
+            <strong>4.875</strong>
+            <span>Insiden Dianalisis</span>
+            <small>
+              Periode 1 Jul 2024 – 30 Jun 2025
+            </small>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-source">ENISA 2025</span>
+            <strong>76,7%</strong>
+            <span>DDoS</span>
+            <small>
+              Dari jenis insiden yang tercatat
+            </small>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-source">ENISA 2025</span>
+            <strong>60%</strong>
+            <span>Phishing</span>
+            <small>
+              Dari observed initial intrusion cases
+            </small>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-source">ENISA 2025</span>
+            <strong>21,3%</strong>
+            <span>Vulnerability</span>
+            <small>
+              Initial intrusion vector
+            </small>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-source">Verizon 2025</span>
+            <strong>44%</strong>
+            <span>Ransomware</span>
+            <small>
+              Breach yang melibatkan ransomware
+            </small>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-source">Verizon 2026</span>
+            <strong>31%</strong>
+            <span>Vulnerability</span>
+            <small>
+              Breach dimulai dari eksploitasi kerentanan
+            </small>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-source">Verizon 2026</span>
+            <strong>48%</strong>
+            <span>Ransomware</span>
+            <small>
+              Breach yang melibatkan ransomware
+            </small>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-source">Verizon 2026</span>
+            <strong>15</strong>
+            <span>Teknik + GenAI</span>
+            <small>
+              Median teknik yang dibantu AI
+            </small>
+          </div>
+
+        </div>
+
+
+        <div class="comparison">
+
+          <div class="section-heading">
+            <span>VERIZON DBIR</span>
+            <h2>Perubahan yang Terlihat</h2>
+          </div>
+
+          <div class="comparison-grid">
+
+            <div class="comparison-card">
+              <div class="comparison-label">Ransomware</div>
+              <div class="comparison-numbers">
+                <span>44%</span>
+                <b>→</b>
+                <strong>48%</strong>
+              </div>
+              <p>
+                Persentase breach yang melibatkan ransomware
+                pada DBIR 2025 dan 2026.
+              </p>
+            </div>
+
+            <div class="comparison-card">
+              <div class="comparison-label">Vulnerability Exploitation</div>
+              <div class="comparison-numbers">
+                <span>20%</span>
+                <b>→</b>
+                <strong>31%</strong>
+              </div>
+              <p>
+                Angka pada DBIR 2025 dan 2026 menunjukkan
+                meningkatnya peran eksploitasi kerentanan sebagai
+                breach entry point.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="trend-list">
+
+          <div class="trend-item">
+            <span>01</span>
+            <div>
+              <h3>Phishing & Social Engineering</h3>
+              <p>
+                Manipulasi manusia tetap menjadi bagian penting
+                dari ekosistem serangan.
+              </p>
+            </div>
+          </div>
+
+          <div class="trend-item">
+            <span>02</span>
+            <div>
+              <h3>Eksploitasi Kerentanan</h3>
+              <p>
+                Kerentanan software semakin penting sebagai
+                jalur masuk ke organisasi.
+              </p>
+            </div>
+          </div>
+
+          <div class="trend-item">
+            <span>03</span>
+            <div>
+              <h3>Ransomware</h3>
+              <p>
+                Ancaman ransomware tetap menjadi perhatian
+                besar dalam laporan keamanan.
+              </p>
+            </div>
+          </div>
+
+          <div class="trend-item">
+            <span>04</span>
+            <div>
+              <h3>Supply Chain</h3>
+              <p>
+                Ketergantungan terhadap pihak ketiga dapat
+                memperluas risiko keamanan.
+              </p>
+            </div>
+          </div>
+
+          <div class="trend-item">
+            <span>05</span>
+            <div>
+              <h3>AI-Assisted Threats</h3>
+              <p>
+                AI mulai digunakan untuk mempercepat berbagai
+                tahapan aktivitas threat actor.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="highlight">
+          <div class="highlight-icon">!</div>
+          <div>
+            <h3>Catatan Penting tentang Statistik</h3>
+            <p>
+              Statistik dari ENISA dan Verizon berasal dari dataset,
+              periode, serta metodologi yang berbeda. Karena itu,
+              angka antar laporan tidak boleh dianggap sebagai satu
+              dataset yang sama.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= CASES ================= -->
+    <section class="page" id="cases">
+
+      <div class="page-header">
+        <span>04 / CASE STUDY</span>
+        <h1>Kasus & Advanced Persistent Threat</h1>
+        <p>
+          Memahami bagaimana serangan besar dapat berkembang
+          melalui beberapa tahapan.
+        </p>
+      </div>
+
+      <div class="container">
+
+        <div class="case-grid">
+
+          <article class="case-card">
+            <div class="case-year">2017</div>
+            <div class="case-icon">🦠</div>
+            <h2>WannaCry</h2>
+            <p>
+              Ransomware yang menyebar luas dan mengganggu
+              berbagai organisasi di berbagai negara.
+            </p>
+            <div class="case-tag">RANSOMWARE</div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-year">APT</div>
+            <div class="case-icon">👁</div>
+            <h2>APT Campaign</h2>
+            
